@@ -8,9 +8,11 @@ class DiscoverTab extends StatelessWidget {
         body: Container (
           padding: EdgeInsets.only(top: 50, bottom: 50),
           child: SfCalendar(
-      view: CalendarView.schedule,
+      view: CalendarView.month,
       dataSource: MeetingDataSource(_getDataSource()),
       monthViewSettings: MonthViewSettings(
+          appointmentDisplayCount: 2,
+          showAgenda: true,
           appointmentDisplayMode: MonthAppointmentDisplayMode.appointment),
     ),
         ));

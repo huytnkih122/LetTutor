@@ -5,6 +5,7 @@ import 'package:LetTutor/shared/shared.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:LetTutor/modules/home/card/cardupcomming.dart';
 
 class MainTab extends GetView<HomeController> {
   @override
@@ -14,7 +15,7 @@ class MainTab extends GetView<HomeController> {
 
   Widget _buildWelcome() {
     return Container(
-      height: 430,
+      color: Colors.blue,
       padding: EdgeInsets.symmetric(vertical: 70),
       child: Column(children: [
         Row(
@@ -27,20 +28,27 @@ class MainTab extends GetView<HomeController> {
               style: TextStyle(
                 fontSize: CommonConstants.largeText,
                 fontWeight: FontWeight.bold,
-                color: Colors.blue,
+                color: Colors.white,
               ),
             ),
-            SizedBox(height: 50.0),
-            BorderButton(
-              text: 'Booking',
-              onPressed: () {},
-            ),
-            SizedBox(height: 20.0),
-           
+
+
           ])
         ],
       ),
-      Text('Lich hoc sap toi')
+        SizedBox(height: 100.0),
+        Text(
+          'Upcoming',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: CommonConstants.largeText,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
+        SizedBox(height: 10.0),
+        CardUpcomming(),
+        CardUpcomming()
       ],)
     );
   }
