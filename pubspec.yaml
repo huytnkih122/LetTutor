@@ -38,6 +38,7 @@ dependencies:
   cached_network_image: ^3.0.0
   syncfusion_flutter_calendar: ^19.4.54
   getwidget: ^2.0.5
+  sqflite: ^2.0.2
 dev_dependencies:
   flutter_test:
     sdk: flutter
