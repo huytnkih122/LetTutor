@@ -39,8 +39,9 @@ class _InboxTabState extends State<InboxTab> with TickerProviderStateMixin {
           automaticallyImplyLeading: false,
           shadowColor: Colors.blue,
           title: Text('Inbox'),
+          backgroundColor: Colors.blue,
         ),
-        body: Container(
+        body: SingleChildScrollView(
           child: _buildListInbox(),
         ));
   }

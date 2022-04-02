@@ -11,7 +11,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(color: Colors.lightGreen),
+        Container(color: Colors.blue),
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: CommonWidget.appBar(

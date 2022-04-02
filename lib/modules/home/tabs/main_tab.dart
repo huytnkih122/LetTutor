@@ -14,16 +14,13 @@ class MainTab extends GetView<HomeController> {
   }
 
   Widget _buildWelcome() {
-    return Container(
-      color: Colors.blue,
-      padding: EdgeInsets.symmetric(vertical: 70),
-      child: Column(children: [
-        Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Column(children: [
+    return Scaffold(
+      body: Container(
+          color: Colors.blue,
+          child: Column(children: [
+            Image.network("https://elearningindustry.com/wp-content/uploads/2021/12/shutterstock_1834087759.jpg"),
             Text(
-              'HLetTutor',
+              'Upcoming',
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: CommonConstants.largeText,
@@ -31,25 +28,10 @@ class MainTab extends GetView<HomeController> {
                 color: Colors.white,
               ),
             ),
-
-
-          ])
-        ],
-      ),
-        SizedBox(height: 100.0),
-        Text(
-          'Upcoming',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: CommonConstants.largeText,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
-        SizedBox(height: 10.0),
-        CardUpcomming(),
-        CardUpcomming()
-      ],)
+            SizedBox(height: 10.0),
+            CardUpcomming()
+          ],)
+      )
     );
   }
 }

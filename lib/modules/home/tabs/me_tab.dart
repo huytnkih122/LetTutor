@@ -164,7 +164,7 @@ class MeTab extends GetView<HomeController> {
   Widget imageProfile() {
     return Container(
         height: 163,
-        color: Colors.green,
+        color: Colors.blue,
         child: Row(
           children: <Widget>[
             Padding(

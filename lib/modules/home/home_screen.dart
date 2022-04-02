@@ -29,17 +29,17 @@ class HomeScreen extends GetView<HomeController> {
                 : "icon_home.svg",
           ),
           _buildNavigationBarItem(
-            "Discover",
+            "Calendar",
             MainTabs.discover == controller.currentTab.value
                 ? "icon_discover_activited.svg"
                 : "icon_discover.svg",
           ),
           _buildNavigationBarItem(
-            "Resource",
+            "Booking",
             "icon_resource.svg",
           ),
           _buildNavigationBarItem(
-            "Inbox",
+            "Chat",
             MainTabs.inbox == controller.currentTab.value
                 ? "icon_inbox_activited.svg"
                 : "icon_inbox.svg",

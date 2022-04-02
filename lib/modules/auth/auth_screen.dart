@@ -25,7 +25,7 @@ class AuthScreen extends GetView<AuthController> {
         Icon(
           Icons.cast_for_education,
           size: SizeConfig().screenWidth * 0.26,
-          color: Colors.blueGrey,
+          color: Colors.blue,
         ),
         SizedBox(height: 20.0),
         Text(
@@ -34,7 +34,7 @@ class AuthScreen extends GetView<AuthController> {
           style: TextStyle(
             fontSize: CommonConstants.largeText,
             fontWeight: FontWeight.bold,
-            color: Theme.of(context).textTheme.headline6!.color,
+            color: Colors.blue,
           ),
         ),
         SizedBox(height: 50.0),
